@@ -1,0 +1,38 @@
+.header {
+    position: absolute;
+    top: 38px;
+    right: 62px;
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-links {
+        display: flex;
+        gap: 10px;
+    }
+
+    &-link {
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &-contacts {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+}
+
+
+.icon-bg {
+    box-sizing: border-box;
+    padding-top: 3.2px;
+    padding-left: 5.3px;
+    width: 22.96px;
+    height: 24px;
+    background-color: $darkbg-color;
+    border-radius: 50%;
+}
