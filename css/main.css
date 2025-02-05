@@ -1,5 +1,5 @@
 .container {
-  width: 1277px;
+  max-width: 1277px;
   margin: 0 auto;
 }
 
@@ -90,4 +90,45 @@ address {
   height: 24px;
   background-color: #1E1E1E;
   border-radius: 50%;
+}
+
+.about {
+  padding: 90px 0;
+}
+.about-title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-desc {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+
+.tickets {
+  padding-bottom: 36px;
+}
+.tickets-title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  padding-bottom: 64px;
 }/*# sourceMappingURL=main.css.map */

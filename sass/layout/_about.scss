@@ -1,0 +1,27 @@
+.about {
+    padding: 90px 0;
+
+    &-title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        display: flex;
+        gap: 38px;
+        align-items: center;
+    }
+
+    &-desc {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        text-align: left;
+    }
+}
