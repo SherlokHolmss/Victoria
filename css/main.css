@@ -3,6 +3,17 @@
   margin: 0 auto;
 }
 
+.tickets-main-btn {
+  border-radius: 5px;
+  color: #F4F2F1;
+  background-color: #FF3002;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.tickets-main-btn:hover {
+  background-color: rgba(255, 48, 2, 0.55);
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -125,10 +136,57 @@ address {
   padding-bottom: 36px;
 }
 .tickets-title {
-  font-family: Montserrat;
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
   text-align: left;
   padding-bottom: 64px;
+}
+.tickets-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.tickets-main-item {
+  text-align: center;
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
+  height: 489px;
+  background-color: #43484D;
+  padding-top: 53px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tickets-main-item:hover {
+  background-color: white;
+  color: #43484D;
+  outline: 2px solid #FF3002;
+}
+.tickets-main-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 36px;
+}
+.tickets-main-price {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 36px;
+}
+.tickets-main-desc {
+  margin: 0 auto;
+  width: 205px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 113px;
+}
+.tickets-main-btn {
+  width: 195px;
+  height: 48px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+%button {
+    border-radius: 5px;
+    color: $text-color;
+    background-color: $accent-color;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
