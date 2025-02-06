@@ -1,0 +1,42 @@
+.contacts {
+    padding-bottom: 193px;
+
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 126px;
+    }
+
+    &-title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 11px;
+    }
+
+    &-description {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 10px;
+    }
+
+    &-list {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+.desciption-wrap {
+    min-width: 570px;
+}

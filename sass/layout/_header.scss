@@ -1,8 +1,8 @@
 .header {
     position: absolute;
     top: 38px;
-    right: 62px;
-
+    right:370px;
+        
     &-wrap {
         display: flex;
         align-items: center;
@@ -35,4 +35,5 @@
     height: 24px;
     background-color: $darkbg-color;
     border-radius: 50%;
+
 }
