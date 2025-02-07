@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victoria</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description"
+        content="Спортивний клуб «Вікторія» – ідеальне місце для активного відпочинку, нових знайомств і комфортних тренувань. Сучасне обладнання, зручне зонування та доступні ціни!">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -145,29 +145,78 @@
                 <li><button>Батончики</button></li>
             </ul>
         </section>
-        <section class="gallery" id="gallery">
-            <h3>Галерея</h3>
-            <ul>
-                <li><img src="" alt="" loading="lazy" /></li>
-                <li><img src="" alt="" loading="lazy" /></li>
-                <li><img src="" alt="" loading="lazy" /></li>
-                <li><img src="" alt="" loading="lazy" /></li>
-                <li><img src="" alt="" loading="lazy" /></li>
-                <li><img src="" alt="" loading="lazy" /></li>
-                <li><img src="" alt="" loading="lazy" /></li>
-            </ul>
-        </section>
+            <section class="gallery" id="gallery">
+                <div class="container">
+                    <h3 class="gallery-title">Галерея</h3>
+                    <div class="gallery-wrap">
+                        <div class="gallery-slider">
+                            <button class="gallety-prev">
+                                <svg class="prev-svg" width="19" height="32">
+                                    <use href="./images/symbol-defs.svg#icon-prev"></use>
+                                </svg>
+                            </button>
+                            <ul class="gallery-list">
+                                <li class="gallery-item">
+                                    <img src="./images/gallery1.png" alt="Зображення 1" class="gallery-image"
+                                        loading="lazy">
+                                </li>
+                                <li class="gallery-item">
+                                    <img src="./images/gallery2.png" alt="Зображення 2" class="gallery-image"
+                                        loading="lazy">
+                                </li>
+                                <li class="gallery-item">
+                                    <img src="./images/gallery3.png" alt="Зображення 3" class="gallery-image"
+                                        loading="lazy">
+                                </li>
+                                <li class="gallery-item">
+                                    <img src="./images/gallery4.png" alt="Зображення 4" class="gallery-image"
+                                        loading="lazy">
+                                </li>
+                                <li class="gallery-item">
+                                    <img src="./images/gallery5.png" alt="Зображення 5" class="gallery-image"
+                                        loading="lazy">
+                                </li>
+                                <li class="gallery-item">
+                                    <img src="./images/gallery6.png" alt="Зображення 6" class="gallery-image"
+                                        loading="lazy">
+                                </li>
+                                <li class="gallery-item"><img src="./images/gallery7.png" alt="Зображення 7"
+                                        class="gallery-image" loading="lazy">
+                                </li>
+                            </ul>
+                            <button class="gallery-next">
+                                <svg class="next-svg" width="19" height="32">
+                                    <use href="./images/symbol-defs.svg#icon-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts-wrap">
                     <div class="desciption-wrap">
                         <h3 class="contacts-title">Контакти</h3>
-                        <p class="contacts-description" class="contacts-phone">Телефон: <span
-                                class="contacts-detail">+380950335563</span></p>
-                        <p class="contacts-description" class="contacts-adress">
+                        <p class="contacts-description">
+                            <svg width="20" height="20" class="contacts-svg">
+                                <use href="../../images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            Телефон: <span class="contacts-detail">+380950335563</span>
+                        </p>
+                        <p class="contacts-description">
+                            <svg width="20" height="20" class="contacts-svg">
+                                <use href="../../images/symbol-defs.svg#icon-point"></use>
+                            </svg>
                             Адреса: <span class="contacts-detail">вул. Спортивна, 3, Остриця, Чернівецька обл.</span>
                         </p>
-                        <p class="contacts-description" class="contacts-schedule">Режим роботи:</p>
+                        <p class="contacts-description">
+                            <svg width="20" height="20" class="contacts-svg">
+                                <use href="../../images/symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            Режим роботи:
+                        </p>
+
                         <ul class="contacts-list">
                             <li class="contacts-item">
                                 <p class="contacts-item-description">Понеділок - Пʼятниця 8:00-21:30</p>
@@ -189,27 +238,28 @@
             </div>
         </section>
     </main>
-        <footer class="footer">
+    <footer class="footer">
 
-            <div class="footer-container">
-                <img src="./images/logo.png" alt="Логотип" class="footer-logo" loading="lazy">
-                <ul class="footer-list">
-                    <li class="list-item"><a href="#about" class="footer-link">Про нас</a></li>
-                    <li class="list-item"><a href="#tickets" class="footer-link">Абонементи</a></li>
-                    <li class="list-item"><a href="#bar" class="footer-link">Спорт-бар</a></li>
-                    <li class="list-item"><a href="#gallery" class="footer-link">Галерея</a></li>
-                    <li class="list-item"><a href="#contacts" class="footer-link">Контакти</a></li>
-                </ul>
-                <div class="footer-contacts">
-                    <div class="icon-bg">
-                        <svg class="footer-icon" width="12.24" height="12.8">
-                            <use href="./images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                    <a href="tel:+380950335563" class="footer-phone">+380 95 033 5563</a>
+        <div class="footer-container">
+            <img src="./images/logo.png" alt="Логотип" class="footer-logo" loading="lazy">
+            <ul class="footer-list">
+                <li class="list-item"><a href="#about" class="footer-link">Про нас</a></li>
+                <li class="list-item"><a href="#tickets" class="footer-link">Абонементи</a></li>
+                <li class="list-item"><a href="#bar" class="footer-link">Спорт-бар</a></li>
+                <li class="list-item"><a href="#gallery" class="footer-link">Галерея</a></li>
+                <li class="list-item"><a href="#contacts" class="footer-link">Контакти</a></li>
+            </ul>
+            <div class="footer-contacts">
+                <div class="icon-bg">
+                    <svg class="footer-icon" width="12.24" height="12.8">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
                 </div>
+                <a href="tel:+380950335563" class="footer-phone">+380 95 033 5563</a>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script src="./js/gallery.js" type="module"></script>
 </body>
 
 </html>
