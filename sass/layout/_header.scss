@@ -1,7 +1,7 @@
 .header {
     position: absolute;
     top: 38px;
-    right:370px;
+    right: 100px;
         
     &-wrap {
         display: flex;
@@ -26,14 +26,13 @@
     }
 }
 
-
 .icon-bg {
     box-sizing: border-box;
-    padding-top: 3.2px;
+    padding-top: 4px;
     padding-left: 5.3px;
     width: 22.96px;
     height: 24px;
     background-color: $darkbg-color;
     border-radius: 50%;
-
+    fill: currentColor;
 }

@@ -12,6 +12,7 @@
     &-main {
         display: flex;
         gap: 24px;
+        margin-bottom: 24px;
 
         &-item {
             text-align: center;
@@ -58,6 +59,47 @@
             width: 195px;
             height: 48px;
             
+            @extend %button;
+        }
+    }
+
+    &-onetime {
+        display: flex;
+        gap: 24px;
+
+        &-item {
+            width: 628px;
+            background-color: $lightbg-color;
+            text-align: center;
+            padding-top: 12px;
+            padding-bottom: 14px;
+            border-radius: 5px;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: white;
+                color: $lightbg-color;
+                outline: 2px solid $accent-color;
+            }
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 48px;
+            letter-spacing: 0px;
+        }
+
+        &-price {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 0px;
+        }
+
+        &-btn {
+            width: 180px;
+            height: 35px;
             @extend %button;
         }
     }
