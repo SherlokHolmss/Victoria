@@ -1,0 +1,21 @@
+.gallery {
+    margin-top: 97px;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    &-title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    &-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}

@@ -1,6 +1,5 @@
 .contacts {
     padding-bottom: 193px;
-
     &-wrap {
         display: flex;
         justify-content: center;
@@ -28,6 +27,8 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
     }
 
     &-list {
@@ -35,8 +36,15 @@
         gap: 15px;
         flex-direction: column;
     }
+    &-svg{
+        fill: $text-color;
+        margin-right: 21px;
+    }
+    &-item-description{
+        margin-left: 41px;
+    }
 }
 
 .desciption-wrap {
-    min-width: 570px;
+    min-width: 600px;
 }
