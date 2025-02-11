@@ -1,0 +1,89 @@
+.sport-bar {
+    margin: 111px 0;
+
+    &-title {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: 0px;
+        margin-bottom: 60px;
+    }
+
+    &-filter-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+
+    &-product-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+    }
+}
+
+.product {
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color:rgba(255, 255, 255, 1);
+
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        color:$darkbg-color ;
+    }
+
+    &-button {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5%;
+        text-align: center;
+        width: 137px;
+        height: 48px;
+        border: 1px solid $accent-color;
+        border-radius: 5px;
+        color:$accent-color;
+        background-color:rgba(255, 255, 255, 1);
+        transition: background-color 0.2s;
+        margin-bottom: 17px;
+
+        &:hover {
+            color: $text-color;
+            background-color: $accent-color;
+        }
+    }
+}
+
+.filter-button {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    width: 301px;
+    height: 80px;
+    border-radius: 5px;
+    color: $text-color;
+    background-color: $lightbg-color;
+    transition: background-color 0.2s;
+}
+.active{
+    background-color: $accent-color;
+}
+.hidden {
+    display: none;
+}
