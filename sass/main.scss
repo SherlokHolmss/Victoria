@@ -1,8 +1,8 @@
-@import "./base/container";
 @import "./abstracts/variables";
 @import "./abstracts/placeholders";
-@import "./base/typography";
 @import "./base/reset";
+@import "./base/typography";
+@import "./base/container";
 @import "./layout/header";
 @import "./layout/about";
 @import "./layout/tickets";
@@ -10,4 +10,5 @@
 @import "./layout/footer";
 @import "./layout/contacts";
 @import "./layout/gallery";
+@import "./layout/sportbar";
 @import "./components/modal";

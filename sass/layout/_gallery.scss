@@ -2,7 +2,9 @@
     margin-top: 97px;
     margin-bottom: 40px;
     overflow: hidden;
-
+    &-image{
+        transition: transform 0.3s ease-in-out;
+    }
     &-title {
         font-family: Montserrat;
         font-size: 48px;
@@ -12,10 +14,44 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
     }
-    &-list{
+
+    &-list {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    &-slider{
+        position: relative;
+    }
+    &-prev {
+        width: 88px;
+        height: 88px;
+        background-color: $accent-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &-next{
+        width: 88px;
+        height: 88px;
+        background-color: $accent-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
+
+
