@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const keyword = categoryMap[category];
         
         productItems.forEach(item => {
-            const description = item.querySelector(".product-description").textContent;
+            const description = item.querySelector(".product-title").textContent;
             if (description.includes(keyword)) {
                 item.classList.remove("hidden");
             } else {

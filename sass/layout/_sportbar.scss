@@ -79,6 +79,8 @@
 
 .product {
     &-item {
+        width: 412px;
+        height: 420px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -86,15 +88,24 @@
         gap: 20px;
         background-color:rgba(255, 255, 255, 1);
         border-radius: 5px;
+        padding: 0 11px 10px 11px;
     }
 
-    &-description {
+    &-title {
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 0%;
         text-align: center;
-        color:$darkbg-color ;
+        color: $darkbg-color ;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        color: $darkbg-color ;
     }
 
     &-button {
@@ -107,8 +118,8 @@
         height: 48px;
         border: 1px solid $accent-color;
         border-radius: 5px;
-        color:$accent-color;
-        background-color:rgba(255, 255, 255, 1);
+        color: $accent-color;
+        background-color: rgba(255, 255, 255, 1);
         transition: background-color 0.2s;
         margin-bottom: 17px;
 
@@ -131,22 +142,10 @@
     color: $text-color;
     background-color: $lightbg-color;
     transition: background-color 0.2s;
-
-    @include tab(768px) {
-        width: 370px;
-    }
-
-    @include desc(1200px) {
-        width: 282px;
-    }
 }
-
 .active{
-    @include tab(768px) {
-        background-color: $accent-color;
-    }
+    background-color: $accent-color;
 }
-
 .hidden {
     display: none;
 }
