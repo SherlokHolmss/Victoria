@@ -762,7 +762,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  width: 375px;
+  width: 412px;
   margin: 0 auto;
 }
 .sport-bar-title {
@@ -886,9 +886,21 @@ body {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
+@media screen and (min-width: 768px) {
+  .filter-button {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-button {
+    width: 282px;
+  }
+}
 
-.active {
-  background-color: #FF3002;
+@media screen and (min-width: 768px) {
+  .active {
+    background-color: #FF3002;
+  }
 }
 
 .hidden {

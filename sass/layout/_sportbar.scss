@@ -39,7 +39,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        width: 375px;
+        width: 412px;
         margin: 0 auto;
     }
 
@@ -142,9 +142,19 @@
     color: $text-color;
     background-color: $lightbg-color;
     transition: background-color 0.2s;
+    
+    @include tab(768px) {
+        width: 370px;
+    }
+
+    @include desc(1200px) {
+        width: 282px;
+    }
 }
 .active{
-    background-color: $accent-color;
+    @include tab(768px) {
+        background-color: $accent-color;
+    }
 }
 .hidden {
     display: none;
