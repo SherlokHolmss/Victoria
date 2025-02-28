@@ -68,6 +68,23 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add("active");
             
             filterProducts(button.textContent.trim());
+
+            if (screen.width < 768) {
+                const mobMenu = document.querySelector(".sport-bar-mobile");
+
+                mobMenu.classList.toggle("not-open");
+                document.querySelector("body").classList.toggle("modal-on");
+                window.scrollTo(0, 0);
+
+                document.querySelector(".sport-bar-mobile-title").textContent = button.textContent.trim();
+            }
         });
+    });
+
+    document.querySelector(".sport-bar-mobile-close").addEventListener("click", () => {
+        const mobMenu = document.querySelector(".sport-bar-mobile");
+
+        mobMenu.classList.toggle("not-open");
+        document.querySelector("body").classList.toggle("modal-on");
     });
 });

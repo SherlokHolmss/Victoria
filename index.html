@@ -19,23 +19,37 @@
 
 <body>
     <header class="header">
-        <div class="header-wrap">
-            <nav class="nav">
-                <ul class="header-links">
-                    <li class="header-item"><a href="#about" class="header-link">Про нас</a></li>
-                    <li class="header-item"><a href="#tickets" class="header-link">Абонементи</a></li>
-                    <li class="header-item"><a href="#bar" class="header-link">Спорт-бар</a></li>
-                    <li class="header-item"><a href="#gallery" class="header-link">Галерея</a></li>
-                    <li class="header-item"><a href="#contacts" class="header-link">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="header-contacts">
-                <div class="icon-bg">
-                    <svg class="header-icon" width="12.24" height="12.8">
-                        <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-logo">
+                    <picture>
+                        <source srcset="./images/logo@3x.webp 3x, ./images/logo@2x.webp 2x, ./images/logo.webp 1x" type="image/webp">
+                        <source srcset="./images/logo@3x.jpg 3x, ./images/logo@2x.jpg 2x, ./images/logo.jpg 1x" type="image/jpeg">
+                        <img src="./images/logo.jpg" alt="Логотип" class="header-logo-img" loading="lazy">
+                    </picture> 
                 </div>
-                <a href="" class="header-link">+380 95 033 5563</a>
+                <nav class="nav">
+                    <ul class="header-links">
+                        <li class="header-item"><a href="#about" class="header-link">Про нас</a></li>
+                        <li class="header-item"><a href="#tickets" class="header-link">Абонементи</a></li>
+                        <li class="header-item"><a href="#bar" class="header-link">Спорт-бар</a></li>
+                        <li class="header-item"><a href="#gallery" class="header-link">Галерея</a></li>
+                        <li class="header-item"><a href="#contacts" class="header-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <div class="icon-bg">
+                        <svg class="header-icon" width="12.24" height="12.8">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <a href="" class="header-link">+380 95 033 5563</a>
+                </div>
+                <!-- <button class="header-menu-btn">
+                    <svg class="header-menu-icon" width="34" height="23">
+                        <use href="./images/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button> -->
             </div>
         </div>
     </header>
@@ -279,6 +293,154 @@
                         <button class="product-button">Детальніше</button>
                     </li>
                 </ul>
+                <div class="sport-bar-mobile not-open">
+                    <button class="sport-bar-mobile-close">
+                        <svg class="sport-bar-mobile-icon" width="7" height="13">
+                            <use href="./images/symbol-defs.svg#icon-prev"></use>
+                        </svg>
+                    </button>
+                    <h3 class="sport-bar-mobile-title"></h3>
+                    <ul class="sport-bar-mobile-product-list">
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar1@3x.webp 3x, ./images/sportbar1@2x.webp 2x, ./images/sportbar1.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar1@3x.jpg 3x, ./images/sportbar1@2x.jpg 2x, ./images/sportbar1.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar1.jpg" alt="">
+                            </picture>
+    
+                            <p class="product-description">
+                                Essential AMIN.O. Energy від Optimum Nutrition</p>
+                            <button class="product-button">Детальніше</button>
+    
+                        </li>
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar2@3x.webp 3x, ./images/sportbar2@2x.webp 2x, ./images/sportbar2.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar2@3x.jpg 3x, ./images/sportbar2@2x.jpg 2x, ./images/sportbar2.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar2.jpg" alt="">
+                            </picture>
+    
+                            <p class="product-description">
+                                Essential AMIN.O. Energy від Optimum Nutrition</p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar3@3x.webp 3x, ./images/sportbar3@2x.webp 2x, ./images/sportbar3.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar3@3x.jpg 3x, ./images/sportbar3@2x.jpg 2x, ./images/sportbar3.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar2.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Essential AMIN.O. Energy від Optimum Nutrition</p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+    
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar10@3x.webp 3x, ./images/sportbar10@2x.webp 2x, ./images/sportbar10.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar10@3x.jpg 3x, ./images/sportbar10@2x.jpg 2x, ./images/sportbar10.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar10.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Genius Nutrition iCarnitine
+                            </p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+    
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar6@3x.webp 3x, ./images/sportbar6@2x.webp 2x, ./images/sportbar6.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar6@3x.jpg 3x, ./images/sportbar6@2x.jpg 2x, ./images/sportbar6.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar6.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Гейнер Scitec Nutrition Jumbo
+                            </p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar7@3x.webp 3x, ./images/sportbar7@2x.webp 2x, ./images/sportbar7.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar7@3x.jpg 3x, ./images/sportbar7@2x.jpg 2x, ./images/sportbar7.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar7.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Яловичиний гейнер 100% BeefMuscle
+                            </p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+    
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar11@3x.webp 3x, ./images/sportbar11@2x.webp 2x, ./images/sportbar11.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar11@3x.jpg 3x, ./images/sportbar11@2x.jpg 2x, ./images/sportbar11.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar11.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Горіховий батончик Power Pro 36%.В батончиках міститься: 36% протеїну
+                            </p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar12@3x.webp 3x, ./images/sportbar12@2x.webp 2x, ./images/sportbar12.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar12@3x.jpg 3x, ./images/sportbar12@2x.jpg 2x, ./images/sportbar12.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar12.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Горіховий батончик Power Pro 36%.В батончиках міститься: 36% протеїну
+                            </p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+                        <li class="product-item">
+                            <picture>
+                                <source
+                                    srcset="./images/sportbar13@3x.webp 3x, ./images/sportbar13@2x.webp 2x, ./images/sportbar13.webp 1x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/sportbar13@3x.jpg 3x, ./images/sportbar13@2x.jpg 2x, ./images/sportbar13.jpg 1x"
+                                    type="image/jpeg">
+                                <img src="./images/sportbar13.jpg" alt="">
+                            </picture>
+                            <p class="product-description">
+                                Горіховий батончик Power Pro 36%.В батончиках міститься: 36% протеїну
+                            </p>
+                            <button class="product-button">Детальніше</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="gallery" id="gallery">
@@ -473,7 +635,7 @@
             </form>
         </div>
     </div>
-    <!-- <script src="./js/main.js" type="module"></script> Шото не працює -->
+    <!-- <script src="./js/main.js" type="module"></script> Давид: Шото не працює Міша: Ото ти кнш намутив, Давид -->
     <script src="./js/gallery.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/filter.js" type="module"></script>

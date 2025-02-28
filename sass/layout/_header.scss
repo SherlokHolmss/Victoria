@@ -1,12 +1,25 @@
 .header {
+    width: 100%;
     position: absolute;
     top: 38px;
-    right:100px;
         
     &-wrap {
+        width: fit-content;
         display: flex;
         align-items: center;
-        gap: 10px;
+        margin: 0 auto;
+        padding-right: 20px;
+        gap: 51px;
+
+        @include tab(768px) {
+            gap: 10px;
+            padding-right: 0;
+        }
+
+        @include desc(1200px) {
+            margin: 0;
+            margin-left: auto;
+        }
     }
 
     &-links {
@@ -15,8 +28,13 @@
     }
 
     &-link {
+        font-size: 14px;
         font-family: inherit;
         color: inherit;
+
+        @include tab(768px) {
+            font-size: 16px;
+        }
     }
 
     &-contacts {
@@ -24,9 +42,34 @@
         gap: 16px;
         align-items: center;
     }
+
+    &-logo {
+        @include tab(768px) {
+            display: none;
+        }
+    }
+
+    // &-menu {
+    //     &-btn {
+    //         background-color: transparent;
+            
+    //         @include tab(768px) {
+    //             display: none;
+    //         }
+    //     }
+    // }
+}
+
+.nav {
+    display: none;
+
+    @include tab(768px) {
+        display: block;
+    }
 }
 
 .icon-bg {
+    display: none;
     box-sizing: border-box;
     padding-top: 4px;
     padding-left: 5.3px;
@@ -35,4 +78,8 @@
     background-color: $darkbg-color;
     border-radius: 50%;
     fill: currentColor;
+
+    @include tab(768px) {
+        display: block;
+    }
 }

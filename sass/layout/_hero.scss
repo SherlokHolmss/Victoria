@@ -1,19 +1,23 @@
 .hero {
     padding-top: 155px;
-    padding-bottom: 440px;
-    background-image: 
-    image-set(
-        url('../images/herobg@3x.webp') 3x,
-        url('../images/herobg@2x.webp') 2x,
-        url('../images/herobg.webp') 1x,
-        url('../images/herobg@3x.jpg') 3x,
-        url('../images/herobg@2x.jpg') 2x,
-        url('../images/herobg.jpg') 1x
-    );
+    padding-bottom: 120px;
+    // background-image: 
+    // image-set(
+    //     url('../images/herobg@3x.webp') 3x,
+    //     url('../images/herobg@2x.webp') 2x,
+    //     url('../images/herobg.webp') 1x,
+    //     url('../images/herobg@3x.jpg') 3x,
+    //     url('../images/herobg@2x.jpg') 2x,
+    //     url('../images/herobg.jpg') 1x
+    // );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+
+    @include tab(768px) {
+        padding-bottom: 440px;
+    }
 
     &-content {
         display: flex;
@@ -23,26 +27,38 @@
     }
 
     &-title {
-        font-family: Montserrat;
-        font-size: 140px;
         font-weight: 400;
-        line-height: 140px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        margin-bottom: 32px;
+        font-size: 64px;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+
+        @include tab(768px) {
+            font-size: 140px;
+            font-weight: 400;
+            line-height: 140px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin-bottom: 32px;
+        }
     }
 
     &-desc {
-        margin-bottom: 52px;
-        font-family: Montserrat;
-        font-size: 32px;
         font-weight: 400;
-        line-height: 39.01px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
+        font-size: 16px;
+        line-height: 19.5px;
+        letter-spacing: 0%;
+        margin-bottom: 403px;
 
+        @include tab(768px) {
+            margin-bottom: 52px;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 39.01px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
     }
 
     &-btn {
@@ -50,7 +66,6 @@
         height: 64px;
         @extend %button;
         border-radius: 8px;
-        font-family: Montserrat;
         font-size: 20px;
         font-weight: 400;
         line-height: 32px;
@@ -58,6 +73,11 @@
         text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        margin: 0 auto;
+
+        @include tab(768px) {
+            margin: 0;
+        }
     }
 
     &-socials {
@@ -65,18 +85,34 @@
         justify-content: end;
         align-items: center;
         gap: 32px;
-        position: absolute;
-        top: 420px;
-        right: -200px;
-        transform: rotate(90deg);
+        justify-content: center;
+        // transform: translate(0, -50px);
+        margin-top: 50px;
+
+        @include tab(768px) {
+            position: absolute;
+            left: auto;
+            bottom: auto;
+            transform: rotate(90deg);
+            top: 370px;
+            right: -170px;
+        }
+
+        @include desc(1200px) {
+            top: 420px;
+            right: -270px;
+        }
 
         &::before,
         &::after {
             content: "";
-            width: 215px; 
+            width: 120px; 
             border: 1px solid $text-color;
             display: block;
 
+            @include desc(1200px) {
+                width: 215px;
+            }
         }
     }
 }

@@ -24,11 +24,15 @@
     height: 85vh;
     background-color: $modalbg-color;
     top: 60px;
-    left: 84px;
+    left: 0;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 15px;
     padding-top: 55px;
     padding-bottom: 63px;
+
+    @include tab(768px) {
+        left: 84px;
+    }
 
     &-close {
         position: absolute;

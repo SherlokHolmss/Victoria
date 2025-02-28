@@ -1,4 +1,15 @@
 .container{
-    max-width: 1277px;
     margin: 0 auto;
+
+    @include mob(480px) {
+        width: 480px;
+    }
+
+    @include tab(768px) {
+        width: 768px;
+    }
+
+    @include desc(1200px) {
+        width: 1200px;
+    }
 }

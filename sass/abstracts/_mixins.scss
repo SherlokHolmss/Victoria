@@ -1,0 +1,17 @@
+@mixin mob($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin tab($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin desc($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
