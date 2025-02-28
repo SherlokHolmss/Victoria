@@ -546,6 +546,8 @@ body {
 }
 
 .product-item {
+  width: 412px;
+  height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,13 +563,21 @@ body {
           align-items: center;
   gap: 20px;
   background-color: rgb(255, 255, 255);
+  padding: 0 11px 10px 11px;
 }
-.product-description {
+.product-title {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
+  color: #1E1E1E;
+}
+.product-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0%;
   color: #1E1E1E;
 }
 .product-button {

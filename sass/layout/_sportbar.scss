@@ -27,22 +27,32 @@
 
 .product {
     &-item {
+        width: 412px;
+        height: 420px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        background-color:rgba(255, 255, 255, 1);
-
+        background-color: rgba(255, 255, 255, 1);
+        padding: 0 11px 10px 11px;
     }
 
-    &-description {
+    &-title {
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 0%;
         text-align: center;
-        color:$darkbg-color ;
+        color: $darkbg-color ;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        color: $darkbg-color ;
     }
 
     &-button {
@@ -56,8 +66,8 @@
         height: 48px;
         border: 1px solid $accent-color;
         border-radius: 5px;
-        color:$accent-color;
-        background-color:rgba(255, 255, 255, 1);
+        color: $accent-color;
+        background-color: rgba(255, 255, 255, 1);
         transition: background-color 0.2s;
         margin-bottom: 17px;
 
@@ -81,9 +91,11 @@
     background-color: $lightbg-color;
     transition: background-color 0.2s;
 }
-.active{
+
+.active {
     background-color: $accent-color;
 }
+
 .hidden {
     display: none;
 }
