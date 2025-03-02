@@ -1,9 +1,11 @@
 import { setupFilters } from "./filter.js";
-import { setupSlider } from "./slider.js";
 import { setupModal } from "./modal.js";
+import { setupDescription } from "./toggleDescription.js";
+import { setupSlider } from "./gallery.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     setupFilters();
-    setupSlider();
     setupModal();
+    setupDescription();
+    setupSlider();
 });

@@ -41,6 +41,7 @@
         gap: 40px;
         width: 412px;
         margin: 0 auto;
+        align-items: center;
     }
 
     &-title {
@@ -70,16 +71,18 @@
         display: none;
         align-items: center;
         gap: 24px;
+        justify-content: center;
 
         @include tab(768px) {
             display: flex;
+            flex-wrap: wrap;
         }
     }
 }
 
 .product {
     &-item {
-        width: 412px;
+        width: 372px;
         height: 420px;
         display: flex;
         flex-direction: column;
@@ -89,6 +92,10 @@
         background-color:rgba(255, 255, 255, 1);
         border-radius: 5px;
         padding: 0 11px 10px 11px;
+
+        @include desc(1200px) {
+            width: 384px;
+        }
     }
 
     &-title {

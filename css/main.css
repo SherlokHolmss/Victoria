@@ -891,6 +891,9 @@ body {
   gap: 40px;
   width: 412px;
   margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .sport-bar-title {
   font-family: Montserrat;
@@ -933,17 +936,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .sport-bar-product-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .product-item {
-  width: 412px;
+  width: 372px;
   height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,6 +970,11 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   padding: 0 11px 10px 11px;
+}
+@media screen and (min-width: 1200px) {
+  .product-item {
+    width: 384px;
+  }
 }
 .product-title {
   font-weight: 400;
