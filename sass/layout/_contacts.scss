@@ -80,6 +80,7 @@
         fill: $text-color;
         width: 18px !important;
         height: 18px !important;
+        flex-shrink: 0;
         margin-right: 21px;
     }
 
@@ -96,6 +97,7 @@
 
     @include mob(425px) {
         min-width: 425px;
+        margin-left: 15px;
     }
 
     @include desc(1024px) {
