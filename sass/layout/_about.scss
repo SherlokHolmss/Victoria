@@ -18,7 +18,10 @@
 
         & img {
             width: 480px;
-
+            @include mob(425px) {
+                width: 425px;
+            }
+    
             @include tab(768px) {
                 width: 600px;
             };
