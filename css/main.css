@@ -400,7 +400,8 @@ body {
 
 .hero {
   padding-top: 155px;
-  padding-bottom: 120px;
+  background-image: -webkit-image-set(url("../images/herobg@3x.webp") 3x, url("../images/herobg@2x.webp") 2x, url("../images/herobg.webp") 1x, url("../images/herobg@3x.jpg") 3x, url("../images/herobg@2x.jpg") 2x, url("../images/herobg.jpg") 1x);
+  background-image: image-set(url("../images/herobg@3x.webp") 3x, url("../images/herobg@2x.webp") 2x, url("../images/herobg.webp") 1x, url("../images/herobg@3x.jpg") 3x, url("../images/herobg@2x.jpg") 2x, url("../images/herobg.jpg") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -548,6 +549,26 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 425px) {
+  .footer-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,6 +581,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 425px) {
+  .footer-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .footer-contacts {
   display: -webkit-box;
@@ -580,17 +618,82 @@ body {
 .contacts {
   padding-bottom: 193px;
 }
+@media screen and (min-width: 768px) {
+  .contacts-map {
+    width: 699px;
+    height: 270px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contacts-map {
+    width: 475px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contacts-map {
+    width: 699px;
+    height: 385px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contacts {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-bottom: 193px;
+  }
+}
 .contacts-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 126px;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contacts-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contacts-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .contacts-title {
   font-family: Montserrat;
@@ -632,38 +735,35 @@ body {
 }
 .contacts-svg {
   fill: #F4F2F1;
+  width: 18px !important;
+  height: 18px !important;
   margin-right: 21px;
 }
 .contacts-item-description {
   margin-left: 41px;
 }
 
-.desciption-wrap {
-  min-width: 600px;
+@media screen and (min-width: 768px) {
+  .desciption-wrap {
+    min-width: 600px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .desciption-wrap {
+    min-width: 425px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .desciption-wrap {
+    min-width: 600px;
+  }
 }
 
 .gallery {
   margin-top: 97px;
   margin-bottom: 40px;
-  overflow: hidden;
 }
-.gallery-image {
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-.gallery-title {
-  font-family: Montserrat;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 48px;
-  text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-}
-.gallery-list {
+.gallery .splide__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,13 +773,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
-  overflow: hidden;
+  width: auto !important;
+  height: auto !important;
 }
-.gallery-slider {
-  position: relative;
+.gallery .splide__slide img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
-.gallery-prev {
+.gallery .splide__arrow--prev {
   width: 88px;
   height: 88px;
   background-color: #FF3002;
@@ -699,7 +802,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.gallery-next {
+.gallery .splide__arrow--next {
   width: 88px;
   height: 88px;
   background-color: #FF3002;
@@ -718,6 +821,25 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.gallery-title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.next-svg {
+  width: 19px !important;
+  height: 72px !important;
+}
+
+.prev-svg {
+  fill: white;
 }
 
 .sport-bar {
@@ -857,6 +979,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5%;
+  padding: 10px;
   text-align: center;
   height: 48px;
   border: 1px solid #FF3002;

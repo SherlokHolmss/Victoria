@@ -3,29 +3,59 @@
     padding: 20px 0;
     padding-left: 65px;
     padding-right: 75px;
+
     &-logo {
         width: 100px;
         height: 62px;
     }
-    &-container{
+
+    &-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @include tab(768px) {
+            justify-content: space-between;
+        }
+
+        @include mob(425px) {
+            justify-content: space-between;
+        }
+
+        @include desc(1024px) {
+            justify-content: space-around;
+        }
     }
-    &-list{
+
+    &-list {
         display: flex;
         justify-content: center;
         gap: 30px;
         align-items: center;
         margin-right: auto;
+
+        @include tab(768px) {
+            display: none;
+        }
+
+        @include mob(425px) {
+            display: none;
+        }
+
+        @include desc(1024px) {
+            display: flex;
+        }
     }
-    &-contacts{
+
+
+    &-contacts {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 18px;
     }
-    &-icon{
+
+    &-icon {
         fill: $text-color;
     }
 }

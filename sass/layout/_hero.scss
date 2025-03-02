@@ -1,15 +1,14 @@
 .hero {
     padding-top: 155px;
-    padding-bottom: 120px;
-    // background-image: 
-    // image-set(
-    //     url('../images/herobg@3x.webp') 3x,
-    //     url('../images/herobg@2x.webp') 2x,
-    //     url('../images/herobg.webp') 1x,
-    //     url('../images/herobg@3x.jpg') 3x,
-    //     url('../images/herobg@2x.jpg') 2x,
-    //     url('../images/herobg.jpg') 1x
-    // );
+    background-image: 
+    image-set(
+        url('../images/herobg@3x.webp') 3x,
+        url('../images/herobg@2x.webp') 2x,
+        url('../images/herobg.webp') 1x,
+        url('../images/herobg@3x.jpg') 3x,
+        url('../images/herobg@2x.jpg') 2x,
+        url('../images/herobg.jpg') 1x
+    );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +85,6 @@
         align-items: center;
         gap: 32px;
         justify-content: center;
-        // transform: translate(0, -50px);
         margin-top: 50px;
 
         @include tab(768px) {

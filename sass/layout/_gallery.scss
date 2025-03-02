@@ -1,32 +1,23 @@
 .gallery {
     margin-top: 97px;
     margin-bottom: 40px;
-    overflow: hidden;
-    &-image{
-        transition: transform 0.3s ease-in-out;
-    }
-    &-title {
-        font-family: Montserrat;
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 48px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-    }
 
-    &-list {
+    .splide__slide {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        overflow: hidden;
+        width: auto !important;
+        height: auto !important;
     }
 
-    &-slider{
-        position: relative;
+    .splide__slide img {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 100%;
     }
-    &-prev {
+
+    .splide__arrow--prev {
         width: 88px;
         height: 88px;
         background-color: $accent-color;
@@ -39,7 +30,8 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    &-next{
+
+    .splide__arrow--next {
         width: 88px;
         height: 88px;
         background-color: $accent-color;
@@ -52,6 +44,23 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
+    &-title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
 }
 
+.next-svg {
+    width: 19px !important;
+    height: 72px !important;
+}
 
+.prev-svg {
+    fill: white;
+}
