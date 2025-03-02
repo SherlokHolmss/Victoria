@@ -1,6 +1,5 @@
 .contacts {
-    padding-bottom: 193px;
-    
+    padding-bottom: 0;
     &-map {
         margin-top: 10px;
         width: auto;
@@ -14,9 +13,7 @@
             height: 385px;
         }
     }
-    @include mob(425px) {
-        padding-bottom: 0;
-    }
+
     @include tab(768px) {
         padding-bottom: 193px;
     }
@@ -27,8 +24,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @include tab(768px) {
-            flex-direction: column;
+        @include desc(1024px) {
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 60px;

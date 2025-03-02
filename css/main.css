@@ -608,7 +608,7 @@ body {
 }
 
 .contacts {
-  padding-bottom: 193px;
+  padding-bottom: 0;
 }
 .contacts-map {
   margin-top: 10px;
@@ -625,11 +625,6 @@ body {
   .contacts-map {
     width: 699px;
     height: 385px;
-  }
-}
-@media screen and (min-width: 425px) {
-  .contacts {
-    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -653,12 +648,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .contacts-wrap {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
