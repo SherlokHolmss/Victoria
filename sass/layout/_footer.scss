@@ -28,22 +28,13 @@
     }
 
     &-list {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        align-items: center;
-        margin-right: auto;
-
-        @include tab(768px) {
-            display: none;
-        }
-
-        @include mob(425px) {
-            display: none;
-        }
-
+        display: none;
         @include desc(1024px) {
             display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            margin-right: auto;
         }
     }
 
